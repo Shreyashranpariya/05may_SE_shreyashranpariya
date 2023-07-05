@@ -1,0 +1,60 @@
+// taking marks from user and calculate his total marks,average,percentage
+#include<stdio.h>
+int main ()
+{
+    //taking marks
+    //using float for getting perfect answer
+    float eng,maths,science,ss,hindi;
+    printf("enter marks of english\n",eng);      
+                          scanf("%f",&eng);
+
+    printf      ("enter marks of maths\n");
+                        scanf("%f",&maths);
+
+    printf    ("enter marks of science\n");
+                      scanf("%f",&science);
+
+    printf         ("enter marks of ss\n");
+                           scanf("%f",&ss);
+
+    printf      ("enter marks of hindi\n");   
+                        scanf("%f",&hindi);
+
+    //adding marks
+
+    float sum = eng + maths + science + ss + hindi;
+    printf                ("total marks=%f\n",sum);
+    
+    //calculating average
+    float average = (sum/5.0);
+    printf    ("total average%f\n",average);
+    //calculating percentage
+    float percentage = (sum/500.0)*100 ;
+    printf("percentage=%f\n",percentage);
+    //giving result coment
+    if  (percentage>75 && percentage<=100)
+    {
+        printf("congo you pass with Distinction");
+    }
+    else if (percentage <=60 && percentage>75)
+    {
+        printf("you pass first class");
+    }
+    else if (percentage <=50 && percentage >60)
+    {
+        printf("you pass second class");
+    }
+    else if (percentage <=35 && percentage>50)
+    {
+        printf("you pass third class");
+    }
+    else if(percentage<35)
+    {
+        printf("sorry to say you fail in the exam");
+    }
+    else
+    {
+        printf("please enter valid marks");
+    }
+    return 0;
+}
