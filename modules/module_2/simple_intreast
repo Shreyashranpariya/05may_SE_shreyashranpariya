@@ -1,0 +1,14 @@
+//finding simple intreast using c program
+int main()
+{
+	int p,r,t;
+	printf("enter principal amount\n");
+	scanf("%d",&p);
+	printf("enter rate of intreast\n");
+	scanf("%d",&r);
+	printf("enter the time\n");
+	scanf("%d",&t);
+	int simpleintrest=p*r*t/100;
+	printf("simple intreast:%d",simpleintrest);
+	return 0;
+}
