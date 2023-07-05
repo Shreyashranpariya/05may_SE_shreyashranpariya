@@ -1,1 +1,15 @@
+//module1 printing my information using c code
+#include<stdio.h>
+ int main()
+ {
+//printing my name
+   printf("name= shreyash ranpariya\n ");
+//printing birth date
+   printf("birth date = 21/1/2007\n");
+//printing my age
+   printf(" age = 17\n");
+//printing my age
+   printf("address= adarsh city,80ft road near udgam school");
+   return 0;
+ }
 
