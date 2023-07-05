@@ -1,0 +1,16 @@
+//finding the squeare 
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("entervalue of cube or squeare\n");
+	scanf("%d",&a);
+	int squeare= a*a;
+	printf("squeare=%d\n",squeare);
+	int cube=a*a*a;
+	printf("cube=%d\n",cube);
+	int four=a*a*a*a;
+	printf("four=%d\n",four);
+
+	
+}
