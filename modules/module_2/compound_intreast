@@ -1,0 +1,21 @@
+//finding compound intrest using c language
+#include<stdio.h>
+int main ()
+{
+	float principel,rate,time;
+	
+	printf("enter principa\n");
+	scanf("%f",&principel);
+	
+	printf("enter rate\n");
+	 scanf("%f", &rate);
+	
+	printf("Entertime:");
+	scanf("%f",&time);
+	
+    
+    int ci= principel* (pow((1 + rate / 100), time));
+    printf("your compound intrest is%f");
+    return 0;
+
+}
