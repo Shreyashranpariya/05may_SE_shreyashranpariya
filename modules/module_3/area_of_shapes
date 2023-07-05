@@ -1,0 +1,46 @@
+//using switch case  
+#include <stdio.h>
+int main()
+ {
+  
+    int choose;
+   printf
+   ("please enter number accourdingly to find the area of shapes\n1 for triangle\n2 for circle\n3for squeare");
+   scanf("%d",&choose);
+   switch (choose)
+     {
+          case 1:
+          float base,hight;
+          printf("please enter the base of triangle\n");
+          scanf("%f",&base);
+          printf("please enter hight of the triangle\n");
+          scanf("%f",&hight);
+          float a= base * hight /2;
+         printf("area of triangle=%f",a);
+         break;
+          case 2:
+          float pie = 3.14;
+          int radius;
+          printf("please enter radious of circle to find its area");
+         scanf("%d",&radius);
+         float b = pie*radius*radius;
+         printf("area of circle=%f",b);
+          break;
+          case 3:
+          float side;
+         printf("please enter the side of squeare");
+         scanf("%f",side);
+         float c =side*side;
+         printf("area of squeare=%f",c);
+       
+         break;
+ 
+   
+        default:
+        printf("your choise is invalid");
+         break;
+       }
+    
+     return 0;
+
+ }
